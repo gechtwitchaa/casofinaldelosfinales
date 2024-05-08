@@ -194,7 +194,19 @@ public class SumaDigitosRecursiva {
 -La complejidad computacional de este algoritmo es lineal, es decir, 𝑂(𝑛), donde 𝑛 es la cantidad de dígitos en el número. Esto se debe a que en cada llamada recursiva reduce el tamaño del número en un dígito.
 
 
+EJERCICIO5-2.D)
+d) Responda a las siguiente preguntas:
+• ¿Deberá modificar los atributos timeline y tweets de la clase UserAccount (definida en el
+ejercicio 1) para que contenga elementos de la clase hija Retweet? Justifique su
+razonamiento y, si cree que hay que modificarlos, explique también cómo lo haría.
 
+Sí, deberíamos modificar los atributos timeline y tweets de la clase UserAccount para permitir que contengan tanto tweets como retweets. Un retweet es un tipo especial de tweet que contiene una referencia al tweet original. Por lo tanto, si un usuario puede enviar, recibir y almacenar tweets, también debería poder hacer lo mismo con retweets. Modificar estos atributos para aceptar objetos de tipo Retweet nos permitiría manejar de manera más completa la actividad de los usuarios en la red social.
+
+• ¿Deberá modificar el método tweet(Tweet tweet1) de la clase UserAccount (definida en el
+ejercicio 1) para que pueda enviar también objetos de tipo Retweet? Justifique su
+razonamiento y, si cree que hay que modificarlo, explique también cómo lo haría.
+
+Sí, deberíamos modificar el método tweet(Tweet tweet1) para que pueda enviar tanto tweets como retweets. Un retweet es, una acción de publicar un tweet con una referencia a otro tweet. Por lo tanto, tiene sentido que el método tweet() pueda aceptar tanto tweets como retweets. Esto simplificaría el código y permitiría una mayor flexibilidad en la interacción con los tweets, ya que un retweet es una forma de interacción común en las redes sociales.
 
 
 
