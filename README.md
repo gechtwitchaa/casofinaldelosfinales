@@ -124,6 +124,76 @@ Dado el siguiente algoritmo recursivo:
 a) ¿Qué imprime el código? En caso de que no compile indique el motivo y arregle el programa 
 el codigo deberia imprimir un valor numerico pero no compila (la solucion del codigo estara en intelliJ como "Main")
 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int a = recursive(1, -2);
+        System.out.println(a);
+    }
+
+    public static int recursive(int a, int b){
+        if (b < 0) {
+            return 0; 
+        } else if (b == 0) {
+            return 1;
+        } else if (a == 0) {
+            return 0;
+        } else {
+            return a * recursive(a, b - 1);
+        }
+    }
+}
+
+
+b) Explica brevemente qué cálculo está haciendo y qué tipo de recursividad está empleando.
+
+El algoritmo realiza un cálculo recursivo multiplicando un número a por sí mismo b veces, donde a es el primer parámetro y b es el segundo parámetro de la función recursive.
+Cuando b es 0, el algoritmo devuelve 1, ya que cualquier número elevado a la potencia 0 es 1.
+Cuando a es 0, el algoritmo devuelve 0, ya que cualquier número multiplicado por 0 es 0.
+Si ninguno de los casos anteriores se cumple, el algoritmo se llama a sí mismo con b-1, lo que significa que reduce el exponente en 1 en cada llamada, y multiplica a por el resultado de la llamada recursiva.
+Por lo tanto, la función realiza un cálculo recursivo de la potencia de a elevado a b.
+
+La recursividad empleada es de tipo descendente, ya que en cada llamada recursiva el valor de b se reduce en 1.
+
+
+EJERCICIO 4: 
+Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102 ->
+1 + 0 + 2 = 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la
+resolución:
+¿ Qué t ipo de recursividad se está empleando? ¿ Qué comple jidad computacional
+tiene el algoritmo?
+
+public class SumaDigitosRecursiva {
+
+    // Método para calcular la suma de los dígitos recursivamente
+    public static int sumaDigitos(int numero) {
+        // Caso base: si el número es menor que 10, retornamos el número mismo
+        if (numero < 10) {
+            return numero;
+        } else {
+            // Obtenemos el último dígito
+            int ultimoDigito = numero % 10;
+            // Llamamos recursivamente al método con el número sin el último dígito
+            return ultimoDigito + sumaDigitos(numero / 10);
+        }
+    }
+
+    public static void main(String[] args) {
+        // Ejemplo de uso
+        int numero = 102;
+        System.out.println("La suma de los dígitos de " + numero + " es: " + sumaDigitos(numero));
+    }
+}
+
+
+(SumaDigitosRecursiva)
+
+-El tipo de recursividad que se está empleando es la "recursión descendente", donde el método se llama a sí mismo con un parámetro más pequeño hasta que se alcanza un caso base.
+
+-La complejidad computacional de este algoritmo es lineal, es decir, 𝑂(𝑛), donde 𝑛 es la cantidad de dígitos en el número. Esto se debe a que en cada llamada recursiva reduce el tamaño del número en un dígito.
+
+
 
 
 
