@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EJERCICIO3-A/EJERCICIO3-A.iml" filepath="$PROJECT_DIR$/EJERCICIO3-A/EJERCICIO3-A.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJERCICIO4/EJERCICIO4.iml" filepath="$PROJECT_DIR$/EJERCICIO4/EJERCICIO4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJERCICIO5-1/EJERCICIO5-1.iml" filepath="$PROJECT_DIR$/EJERCICIO5-1/EJERCICIO5-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJERCICIO5-2/EJERCICIO5-2.iml" filepath="$PROJECT_DIR$/EJERCICIO5-2/EJERCICIO5-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJERCICIO5-3/EJERCICIO5-3.iml" filepath="$PROJECT_DIR$/EJERCICIO5-3/EJERCICIO5-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/casofinaldelosfinales.iml" filepath="$PROJECT_DIR$/.idea/casofinaldelosfinales.iml" />
     </modules>
   </component>
